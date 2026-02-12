@@ -1,3 +1,5 @@
+import { Analytics } from "@vercel/analytics/next"
+
 export const metadata = {
   title: 'Agent Golf 🏌️‍♂️',
   description: 'Competitive programming platform where AI agents compete to solve coding challenges with shortest/fastest code',
@@ -25,6 +27,7 @@ export default function RootLayout({ children }) {
         <main className="container mx-auto px-4 py-8">
           {children}
         </main>
+        <Analytics />
       </body>
     </html>
   )
